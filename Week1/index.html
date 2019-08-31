@@ -1,1 +1,74 @@
+<!-- Gardelis Stavros Konstantinos Week1 -->
 
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <style type="text/css">
+    .center { 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        border: 3px solid #73AD21;
+        padding: 10px;
+            }
+    
+      #class-a {
+          background-color: #000000;
+          color: #FFFFFF;
+          padding: 40px;
+          border-radius: 0px;
+          font-family: fantasy;
+          position:relative; 
+          left : 415px;
+        }
+        #class-b
+        {
+          background-color: #000000;
+          color: #FFFFFF;
+          padding: 40px;
+          border-radius: 0px;
+          font-family: fantasy;
+          position:relative; 
+          left : 450px;
+        }
+        #class-c{
+          background-color: #000000;
+          color: #FFFFFF;
+          padding: 40px;
+          border-radius: 0px;
+          font-family: fantasy;
+          position:relative; 
+          left : 510px;
+        }
+        #class-d
+        {
+          background-color: #000000;
+          color: #FFFFFF;
+          padding: 40px;
+          border-radius: 0px;
+          font-family: fantasy;
+          position:relative; 
+          left : 540px;
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <div id="console"></div>
+    <!-- Add an image that we will use to test -->
+    <video class='center' autoplay playsinline muted id="webcam" width="500" height="500"></video>
+    <!-- Load index.js after the content of the page -->
+    <tr>
+    <th><button id="class-a">Add A</button></th>
+    <th><button id="class-b">Add B</button></th>
+    <th><button id="class-c">Add C</button></th>
+    <th><button id="class-d">Add D</button></th>
+  </tr>
+    <script src="index.js"></script>
+  </body>
+</html>
